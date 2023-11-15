@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zach Kelley's portfolio. User experience/user interface design and graphic design.">
+    <title>ZK Design | Home</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/core-styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/meda-queries.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <a href="/"><img src="images/zk-icon.svg" alt="Z K logotype" /></a>
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+            <div id="darken" onclick="closeNav()"></div>
+            <ul>
+                <li>
+                    <a href="/" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="work/">Work</a>
+                </li>
+                <li>
+                    <a href="about/">About</a>
+                </li>
+                <li>
+                    <a href="contact/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-head sky">
+            <article>
+                <h1>Hello!</h1>
+                <p>My name is Zach. I’m a graphic designer based in American Fork, Utah. I specialize in UX/UI design.</p>
+            </article>
+        </section>
+        <section class="background svg-gray bottom">
+            <article>
+                <div class="head-link">
+                    <h2>Featured work</h2>
+                    <a href="work/" class="link">See more
+                        <div class="link-underline"></div>
+                    </a>
+                </div>
+                <article class="card-container" id="card-container"></article>
+            </article>
+            <svg width="100%" height="80%">
+                <rect width="100%" height="100%" />
+            </svg>
+        </section>
+        <section class="normal-background white resume">
+            <article>
+                <h2>Experience</h2>
+                <h4>Vasion<small>August 2022 - Present</small></h4>
+                <p>Associate UX Designer</p>
+                <h4>Missionary Training Center<small>January 2022 - May 2022</small></h4>
+                <p>Lead User Experience Designer</p>
+                <h4>Harold B. Lee Library<small>January 2021 - January 2022</small></h4>
+                <p>UX/UI Designer</p>
+                <h4>BlueStep Systems<small>June 2018 - January 2021</small></h4>
+                <p>Web Design Consultant</p>
+            </article>
+            <article>
+                <h2>Education</h2>
+                <h4>Brigham Young University<small>April 2022</small></h4>
+                <p>Bachelor of Science: Technology and Engineering Studies, Technical Emphasis</p>
+                <p>Design Thinking minor</p>
+            </article>
+            <article>
+                <h2>Skills</h2>
+                <p>Highly organized</p>
+                <p>Adobe Illustrator and Photoshop certified, proficient with other Adobe CC applications</p>
+                <p>Engaged in graphic design creating logos, posters, flyers, and more</p>
+                <p>Experience in photography, including composition and editing</p>
+                <p>Extensive knowledge of HTML and CSS (I built this site from scratch)</p>
+            </article>
+        </section>
+        <section class="normal-background sky extra-padding">
+            <article>
+                <h2>Let&rsquo;s work together</h2>
+                <p>Send me an email, and we can talk about your design ideas.</p>
+                <a href="contact/" class="link">Contact me
+                    <div class="link-underline"></div>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <div>
+                <h3>Zach Kelley</h3>
+            </div>
+            <a href="contact/" class="link">Contact me
+                <div class="link-underline"></div>
+            </a>
+            <img src="images/zk-icon-white.svg" alt="Z K logotype" />
+        </article>
+    </footer>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../" class="active">Home</a>
+        <a href="work/">Work</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+    </div>
+    <script src="./script/script.js"></script>
+    <script>
+        document.getElementById("card-container").innerHTML = featuredWork;
+    </script>
+</body>
+
+</html>
