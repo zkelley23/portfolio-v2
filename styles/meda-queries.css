@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {
+    nav, article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav, article {
+        width: 90%;
+    }
+}
+
+@media (max-width: 850px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 24px;
+    }
+
+    p {
+        max-width: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menuIcon {
+        display: inline-block;
+    }
+
+    .menuBtn {
+        visibility: visible;
+    }
+
+    .desktop-sm {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-md {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 715px) {
+    .mobile-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: var(--padding-sm);
+        justify-content: space-between;
+        margin-right: -6%;
+        margin-left: -6%;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+    }
+
+    .mobile-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-cards img {
+        flex: 0 0 auto;
+        height: calc(var(--vh, 1vh) * 70);
+    }
+
+    .mobile-cards img:first-of-type {
+        margin-left: 6%;
+    }
+
+    .mobile-cards img:last-of-type {
+        margin-right: 6%;
+    }
+
+    .mobile-card::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-cards.text {
+        display: block;
+        margin-right: 6%;
+    }
+
+    .scroll {
+        display: block;
+    }
+
+    .mobile-cards.text div {
+        margin: 2rem;
+    }
+
+    .about-content {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    /* nav, article {
+        width: 90%;
+    } */
+}

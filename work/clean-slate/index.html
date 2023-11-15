@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zach Kelley's portfolio, The Clean Slate project page. User experience/user interface design and graphic design.">
+    <title>ZK Design | The Clean Slate</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/core-styles.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/meda-queries.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <a href="../"><img src="../../images/zk-icon.svg" alt="Z K logotype" /></a>
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+            <div id="darken" onclick="closeNav()"></div>
+            <ul>
+                <li>
+                    <a href="../../">Home</a>
+                </li>
+                <li>
+                    <a href="../" class="active">Work</a>
+                </li>
+                <li>
+                    <a href="../../about/">About</a>
+                </li>
+                <li>
+                    <a href="../../contact/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ---------- TITLE AND OVERVIEW ---------- -->
+        <section class="page-head sky">
+            <article>
+                <a href="../#graphic-design" class="link back-link">&#8592;Work
+                    <div class="link-underline"></div>
+                </a>
+                <h1>The Clean Slate</h1>
+                <!-- <h2>Overview</h2> -->
+                <p>Write-up coming soon!</p>
+            </article>
+        </section>
+        <section class="normal-background white">
+            <article>
+                <img src="../../images/clean-slate/clean-slate1.svg" alt="clean slate primary logo" class="desktop desktop-lg" />
+                <img src="../../images/clean-slate/clean-slate2.svg" alt="clean slate primary logo on slate background" class="desktop desktop-lg" />
+                <img src="../../images/clean-slate/clean-slate3.svg" alt="clean slate logomark" class="desktop desktop-lg" />
+            </article>
+        </section>
+        <section class="normal-background COLOR(sky, gray, white)">
+            <article>
+                <!-- <h2>TITLE</h2>
+                <p>PARAGRAPH</p> -->
+            </article>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <div>
+                <h3>Zach Kelley</h3>
+            </div>
+            <a href="../../contact/" class="link">Contact me
+                <div class="link-underline"></div>
+            </a>
+            <img src="../../images/zk-icon-white.svg" alt="Z K logotype" />
+        </article>
+    </footer>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../../">Home</a>
+        <a href="../../work/" class="active">Work</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+    </div>
+    <script src="../../script/script.js"></script>
+</body>
+
+</html>
